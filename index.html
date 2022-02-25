@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<head>
+    <title>Remix Download</title>
+</head>
+<style>
+    #topbar{
+        background-color: black;
+        height: 10px;
+        width: 100%;
+    }
+    body{
+        background-color: white;
+    }
+    #container{
+        background-color: white;
+        width: 70%;
+        height: 700px;
+        margin: 0px auto;
+    }
+    #header{
+        background-color: white;
+        width: 100%;
+        height: 80px;
+    }
+    #header img{
+        height: 80px;
+    }
+    #header ul{
+        float: right;
+        margin-top: 25px;
+    }
+    #header ul li{
+        display: inline;
+        margin-right: 15px;
+    }
+    #header ul li a{
+        color: black;
+        text-decoration: none;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    #baner img{
+        width: 100%;
+        padding-bottom: 12px;
+        border-radius: 10px;
+    }
+    #content img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+    }
+    #content1 img{
+        width: 32%;
+        height: 160px;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+    }
+
+    #content2 img{
+        width: 32%;
+        border-radius: 10px;
+    }
+    #content4 img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content5 img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content6 img{
+        width: 32%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content7 img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content8 img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content9 img{
+        width: 32%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content10 img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content3 img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content11 img{
+        width: 32%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content12 img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content13 img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content14 img{
+        width: 32%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content15 img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content16 img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content17 img{
+        width: 32%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content18 img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content19 img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content20 img{
+        width: 32%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content21 img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content22 img{
+        width: 32%;
+        float: left;
+        margin-right: 17px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content23 img{
+        width: 32%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+
+
+
+
+    #manasamadichiA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #manmadharasaA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #attamaA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #dindukalluA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #enjoyA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #jorthalaA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #kattuA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #machakanniA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #malayanurA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #mannargudiA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #mochaA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #pondatiA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #potathuA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #pottuA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #seenaA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #sirippuA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #stoveA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #theekaA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #thekkuA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #attamaA a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #varaanA  a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #istanaA  a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #engumA  a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #ahmuthalA  a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #sangiA  a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+    #inthaA  a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+    }
+</style>
+<body>
+    <div id="topbar"></div>
+    <div id="container">
+        <div id="header">
+            <img src="images/uniq logo.jpg">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">DOWNLOAD</a></li>
+        </ul>
+        </div>
+    <div id="baner">
+        <img src="images/cntone.jpg">
+    </div>
+    <div id="content">
+        <img src="images/manasamadichi.jpg" alt="">
+    </div>
+    <div id="content1">
+        <img src="images/manmadharasa.jpg" alt="">
+    </div>
+    <div id="content2">
+        <img src="images/seenathana.jpg" alt="">
+    </div>
+    
+    <div id="content4">
+        <img src="images/jorthala.jpg" alt="">
+    </div>
+    <div id="content5">
+        <img src="images/varan.jpg" alt="">
+    </div>
+    <div id="content6">
+        <img src="images/theeka.jpg" alt="">
+    </div>
+    <div id="content7">
+        <img src="images/thekku.jpg" alt="">
+    </div>
+    <div id="content8">
+        <img src="images/mannargudi.jpg" alt="">
+    </div>
+    <div id="content9">
+        <img src="images/pottu.jpg" alt="">
+    </div>
+    <div id="content10">
+        <img src="images/istana.jpg" alt="">
+    </div>
+    <div id="content3">
+        <img src="images/malayanur.jpg" alt="">
+    </div>
+    <div id="content11">
+        <img src="images/mocha.jpg" alt="">
+    </div>
+    <div id="content12">
+        <img src="images/potathu.jpg" alt="">
+    </div>
+    <div id="content13">
+        <img src="images/pondati.jpg" alt="">
+    </div>
+    <div id="content14">
+        <img src="images/engeyum.jpg" alt="">
+    </div>
+    <div id="content15">
+        <img src="images/aatama.jpg" alt="">
+    </div>
+    <div id="content16">
+        <img src="images/ahh.jpg" alt="">
+    </div>
+    <div id="content17">
+        <img src="images/stove.jpg" alt="">
+    </div>
+    <div id="content18">
+        <img src="images/sirippu varuthu.jpg" alt="">
+    </div>
+    <div id="content19">
+        <img src="images/machakanni.jpg" alt="">
+    </div>
+    <div id="content20">
+        <img src="images/dindukallu.jpg" alt="">
+    </div>
+    <div id="content21">
+        <img src="images/enjoy.jpg" alt="">
+    </div>
+    <div id="content22">
+        <img src="images/kattu.jpg" alt="">
+    </div>
+    <div id="content23">
+        <img src="images/intha.jpg" alt="">
+    </div>
+
+    <div id="download">
+        <h3>Download Here</h3>
+    </div>
+    <div id="manasamadichiA">
+        <audio src="audio/Manasa .mp3"></audio>
+        <a href="audio/Manasa .mp3" download>1.Manasamadichi Remix</a>
+    </div>
+    
+    <div id="manmadharasaA">
+        <audio src="audio/Manmadarasa.mp3"></audio>
+        <a href="audio/Manmadarasa.mp3" download>2.Manmadharasa Remix</a>
+    </div>
+    <div id="attamaA">
+        <audio src="audio/Attama .mp3"></audio>
+        <a href="audio/Attama .mp3" download>3.Attama Remix</a>
+    </div>
+    <div id="dindukalluA">
+        <audio src="audio/dhindukallu.mp3"></audio>
+        <a href="audio/dhindukallu.mp3" download>4.Dhindukallu Remix</a>
+    </div>
+    <div id="enjoyA">
+        <audio src="audio/Enjoy .mp3"></audio>
+        <a href="audio/Enjoy .mp3" download>5.Enjoy Enjami Remix</a>
+    </div>
+    <div id="jorthalaA">
+        <audio src="audio/Jorthala.mp3"></audio>
+        <a href="audio/Jorthala.mp3" download>6.Jorthala Remix</a>
+    </div>
+    <div id="kattuA">
+        <audio src="audio/Kattu Kattu .mp3"></audio>
+        <a href="audio/Kattu Kattu .mp3" download>7.Kattu Kattu Remix</a>
+    </div>
+    <div id="machakanniA">
+        <audio src="audio/Macha Kani.mp3"></audio>
+        <a href="audio/Macha Kani.mp3" download>8.Macha Kanni Remix</a>
+    </div>
+    <div id="malayanurA">
+        <audio src="audio/Malayanur Natamai - Remix(MP3_320K).mp3"></audio>
+        <a href="audio/Malayanur Natamai - Remix(MP3_320K).mp3" download>9.Malayanur Natamai Remix</a>
+    </div>
+    <div id="mannargudiA">
+        <audio src="audio/Mannargudi .mp3"></audio>
+        <a href="audio/Mannargudi .mp3" download>10.Mannargudi Remix</a>
+    </div>
+    <div id="mochaA">
+        <audio src="audio/Mocha .mp3"></audio>
+        <a href="audio/Mocha .mp3" download>11.Mocha Kotta Remix</a>
+    </div>
+    <div id="pondatiA">
+        <audio src="audio/Pondatiya .mp3"></audio>
+        <a href="audio/Pondatiya .mp3" download>12.Pondatiya Remix</a>
+    </div>
+    <div id="potathuA">
+        <audio src="audio/Potathu .mp3"></audio>
+        <a href="audio/Potathu .mp3" download>13.potathu Remix</a>
+    </div>
+    <div id="pottuA">
+        <audio src="audio/Pottuthakku.mp3"></audio>
+        <a href="audio/Pottuthakku.mp3" download>14.Pottuthakku Remix</a>
+    </div>
+    <div id="seenaA">
+        <audio src="audio/Seena.mp3"></audio>
+        <a href="audio/Seena .mp3" download>15.Seena Remix</a>
+    </div>
+    <div id="sirippuA">
+        <audio src="audio/Sirippu.mp3"></audio>
+        <a href="audio/Sirippu.mp3 .mp3" download>16.Sirippu Remix</a>
+    </div>
+    <div id="stoveA">
+        <audio src="audio/Stove.mp3"></audio>
+        <a href="audio/Stove.mp3 .mp3" download>17.Stove Mela Remix</a>
+    </div>
+    <div id="theekaA">
+        <audio src="audio/Theeka .mp3"></audio>
+        <a href="audio/Theeka .mp3" download>18.Theeka Remix</a>
+    </div>
+    <div id="thekkuA">
+        <audio src="audio/Thekku.mp3"></audio>
+        <a href="audio/Thekku.mp3" download>19.Thekku Remix</a>
+    </div>
+    <div id="varaanA">
+        <audio src="audio/Varaan .mp3"></audio>
+        <a href="audio/Varaan .mp3" download>20.Varaan Remix</a>
+    </div>
+    <div id="istanaA">
+        <audio src="audio/Istana .mp3"></audio>
+        <a href="audio/Istana .mp3" download>21.Istana Remix</a>
+    </div>
+    <div id="engumA">
+        <audio src="audio/Engaum.mp3"></audio>
+        <a href="audio/Engaum.mp3" download>22.Engeyum Eppothum Remix</a>
+    </div>
+    <div id="ahmuthalA">
+        <audio src="audio/Ah Muthal.mp3"></audio>
+        <a href="audio/Ah Muthal.mp3" download>23.ah Muthal Remix</a>
+    </div>
+    <div id="sangiA">
+        <audio src="audio/Sangi .mp3"></audio>
+        <a href="audio/Sangi .mp3" download>24.Sangi Mangi Remix</a>
+    </div>
+    <div id="inthaA">
+        <audio src="audio/Indha.mp3"></audio>
+        <a href="audio/Indha.mp3" download>25.Intha ponnungaley Remix</a>
+    </div>
+
+    </div>
+    
+    
+</body>
+</html>
